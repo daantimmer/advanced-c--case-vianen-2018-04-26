@@ -5,4 +5,4 @@
 struct Guest
 {
     std::string name;
-}
+};
