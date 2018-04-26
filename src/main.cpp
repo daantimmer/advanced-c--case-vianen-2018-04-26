@@ -9,17 +9,19 @@
 
 int main() {
 
-	Guest g1 {std::string("Jan")};
-	Guest g2 {std::string("Mike")};
+    Guest g1 {"Jan"};
+    Guest g2 {std::string("Mike")};
 
-	Hotel h;
+    Hotel h;
 
-	h.AddGuest(g1);
-	h.AddGuest(g2);
+    h.AddGuest(g1);
+    h.AddGuest(g2);
 
-	assert(h.GetGuest("Jan").name == "Jan");
-	assert(h.GetGuest("Mike").name == "Mike");
+    h.SetAppreciation(Hotel::Appreciation(0));
 
-	std::cout << "End of adding and validating Hotel map" << std::endl;
+    assert(h.GetGuest("Jan").name == "Jan");
+    assert(h.GetGuest("Mike").name == "Mike");
+
+    std::cout << "End of adding and validating Hotel map" << std::endl;
 
 };
