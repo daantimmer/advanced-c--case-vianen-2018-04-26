@@ -1,8 +1,11 @@
 #pragma once
 
+#include "person.hpp"
+
 #include <string>
 
-struct Guest
+struct Guest : Person
 {
-    std::string name;
+    Guest();
+    explicit Guest(std::string name);
 };

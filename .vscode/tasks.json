@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "cmake .. -G \"MinGW Makefiles\" && mingw32-make && project.exe",
+            "command": "cmake .. -G \"MinGW Makefiles\" && mingw32-make && HotelApplication.exe",
             "group": {
                 "kind": "build",
                 "isDefault": true

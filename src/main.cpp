@@ -1,60 +1,25 @@
-#include <map>
+
+#include "hotel.hpp"
+#include "guest.hpp"
+
+
+#include <string>
 #include <cassert>
 #include <iostream>
 
-using namespace std;
-
-struct Person {
-
-	string name;
-
-	Person() {
-
-	}
-
-	Person(string name) {
-		this->name = name;
-	}
-};
-
-struct Guest : Person {
-
-		Guest() {
-
-		}
-
-		Guest(string name): Person(name) {
-
-		}
-};
-
-struct Hotel {
-
-private:
-
-
-public:
-	void addGuest(Guest p) {
-	}
-
-	Guest& getGuest(string name) {
-	}
-};
-
 int main() {
 
-	Guest g1 {"Jan"};
-	Guest g2 {"Mike"};
+	Guest g1 {std::string("Jan")};
+	Guest g2 {std::string("Mike")};
 
 	Hotel h;
 
-// 	h.addGuest ... 
-//	h.addGuest ...
+	h.AddGuest(g1);
+	h.AddGuest(g2);
 
+	assert(h.GetGuest("Jan").name == "Jan");
+	assert(h.GetGuest("Mike").name == "Mike");
 
-	assert(h.getGuest("Jan").name == "Jan");
-	assert(h.getGuest("Mike").name == "Mike");
-
-	cout << "End of adding and validating Hotel map" << endl;
+	std::cout << "End of adding and validating Hotel map" << std::endl;
 
 };

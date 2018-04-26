@@ -9,4 +9,5 @@ add_executable(
     HotelApplication
     src/main.cpp
     src/hotel.cpp
+    src/guest.cpp
 )
