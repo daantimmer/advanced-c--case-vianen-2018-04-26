@@ -7,7 +7,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 project (HotelApplication)
 add_executable(
     HotelApplication
-    main.cpp
+    src/main.cpp
     # excercises/vectorToQueue.cpp
     # excercises/vectorToDeque.cpp
     # excercises/stdpair.cpp
