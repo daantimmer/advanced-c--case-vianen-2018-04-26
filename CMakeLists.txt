@@ -8,11 +8,5 @@ project (HotelApplication)
 add_executable(
     HotelApplication
     src/main.cpp
-    # excercises/vectorToQueue.cpp
-    # excercises/vectorToDeque.cpp
-    # excercises/stdpair.cpp
-    # excercises/weakptr.cpp
-    # excercises/threads.cpp
-    # excercises/mutex.cpp
-    # excercises/boostvectors.cpp
+    src/hotel.cpp
 )
